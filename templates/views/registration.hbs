@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
+    <title>Document</title>
+    <style>
+      .btn{
+   background-color: #0d6efd;
+   border: 1px solid #0d6efd;
+   border-radius: 8px;
+   color: white;
+  }
+  .btn:hover{
+   background-color: #1b76feef;
+    color: white;
+  }
+    </style>
+</head>
+<body>
+    {{>navbar}}
+    <hr>
+    <hr>
+    <form action="/registration" method="post">
+<div class="mb-3 my-4 mx-3">
+  <label for="exampleFormControlInput1" class="form-label">First name:</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Vivek" name="firstname">
+</div>
+<div class="mb-3 mx-3">
+  <label for="exampleFormControlInput1" class="form-label">Last name:</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tiwari" name="lastname">
+</div>
+<div class="mb-3 mx-3">
+  <label for="exampleFormControlInput1" class="form-label">Mobile no</label>
+  <input type="number" class="form-control" id="exampleFormControlInput1" name="mobileno">
+</div>
+<div class="mb-3 mx-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
+</div>
+<div class="mb-3 mx-3">
+  <label for="exampleFormControlInput1" class="form-label">Password</label>
+  <input type="password" class="form-control" id="exampleFormControlInput1" name="password">
+</div>
+<div class="mb-3 mx-3">
+  <label for="exampleFormControlInput1" class="form-label">confirm password</label>
+  <input type="password" class="form-control" id="exampleFormControlInput1" name="confirmpassword">
+</div>
+
+<div class="mb-3 mx-3">
+<input type="submit" value="Submit" class="btn">
+</div>
+  </form>
+
+{{!-- <form action="/registration" class="my-5" method="post">
+
+First name: <input type="text" name="firstname" id="">
+<input type="submit" value="Submit">
+</form> --}}
+
+
+
+    {{>footer}}
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>
